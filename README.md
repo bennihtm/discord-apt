@@ -1,11 +1,12 @@
 # Discord APT repository
+This repo is updated every 3 hours and hosted by Cloudflare.
 
-As has been [repeatedly asked for](https://support.discord.com/hc/en-us/community/posts/360031737491-Give-us-an-apt-repository-Linux-), this is an APT repository for Discord. Note that I do not in anyway claim ownership over the .deb files here, this is just merely a nicer packaging option. Discord: if you want to do this yourself, please tell me about it and I'll point people there instead!
+Original Repo: https://github.com/palfrey/discord-apt
 
 ## Usage instructions
 
-1. Create a file `/etc/apt/sources.list.d/discord.list` with the contents `deb https://palfrey.github.io/discord-apt/debian/ ./`
-2. Download the file https://palfrey.github.io/discord-apt/discord-apt.gpg.asc to `/etc/apt/trusted.gpg.d`
+1. Create a file `/etc/apt/sources.list.d/discord.list` with the contents `deb [signed-by=/usr/share/keyrings/discord-benni.gpg.asc] https://discord-apt.bendaha.eu.org/debian/ ./`
+2. Download the file https://discord-apt.bendaha.eu.org/discord-benni.gpg.asc to `/usr/share/keyrings/discord-benni.gpg.asc`
 3. `sudo apt-get update`
 4. Install the desired version
 

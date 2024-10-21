@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord APT Repo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <style>
+        html, body {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discord APT Repo</h1>
+        <p>An unofficial APT repository for the Discord packages updated every 3 hours</p>
+      </header>
+      <main>
+        <p>The APT repository is built using Github Actions and deployed on Github Pages. The CDN is provided by Cloudflare.</p>
+        <h2>Add the repo</h2>
+        <p>
+            <ol>
+                <li>Create a file <code>/etc/apt/sources.list.d/discord.list</code> with the contents <code>deb [signed-by=/usr/share/keyrings/discord-benni.gpg.asc] https://discord-apt.bendaha.eu.org/debian/ ./</code></li>
+                <li>Download the file <a href="https://discord-apt.bendaha.eu.org/discord-benni.gpg.asc">https://discord-apt.bendaha.eu.org/discord-benni.gpg.asc</a> to <code>/usr/share/keyrings/discord-benni.gpg.asc</code></li>
+                <li>Run <code>sudo apt update</code></li>
+                <li>Install any of the Discord versions: <code>sudo apt install discord / discord-ptb / discord-canary</code></li>
+            </ol>
+        </p>
+      </main>
+    
+      <footer>
+        <p><a href="https://github.com/bennihtm/discord-apt">Github</a></p>
+      </footer>
+</body>
+</html>
