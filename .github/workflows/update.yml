@@ -40,8 +40,8 @@ jobs:
       - name: Commit and push if changed
         run: |-
             git diff
-            git config --global user.email "repo-bot@example.com"
-            git config --global user.name "repo-bot"
+            git config --global user.email "benjamin@awesomebible.de"
+            git config --global user.name "bennihtm"
             git add -A
             git commit -m "Add new discord file" || exit 0
             git push
