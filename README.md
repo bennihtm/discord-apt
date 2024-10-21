@@ -1,4 +1,5 @@
 # Discord APT repository
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1m2qn.svg)](https://uptime.betterstack.com/?utm_source=status_badge) ![update discord workflow](https://github.com/bennihtm/discord-apt/actions/workflows/update.yml/badge.svg) ![deploy repo workflow](https://github.com/bennihtm/discord-apt/actions/workflows/pages.yml/badge.svg)
 This repo is updated every 3 hours and hosted by Cloudflare.
 
 Original Repo: https://github.com/palfrey/discord-apt
